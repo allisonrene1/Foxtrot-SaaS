@@ -12,7 +12,7 @@
             <div id="overlayContainer" class="card-img-overlay">
                 <h1 class="headline">Welcome to Foxtrot</h1>
                 <p id="textBox" class="subtitle">
-                    Discover Foxtrot, an employee-centric SaaS platform empowering Employee Resource Groups (ERGs) with a service that provides convenient communication and enrichment community collaboration.</p>
+                    Discover Foxtrot, an employee-centric SaaS platform empowering Employee Resource Groups (ERGs) with a service that provides convenient communication and enriching community collaboration.</p>
                 <div class="action-buttons">
                     <router-link v-bind:to="{ name: 'dens' }">
                         <button id="buttonsOfACtion" type="button" class="btn btn-primary">Get Started</button>
@@ -29,11 +29,20 @@
 
         <!-- Content Section -->
         <div id="content" class="w3-row-padding w3-center w3-margin-top">
+<<<<<<< HEAD
           <BenefitsCard 
             title="Responsive Design"
             icon="fa-light fa-network-wired"
+=======
+        
+            <BenefitsCard id="cardA"
+            title="Enhanced Community Engagement"
+            icon="<fa-solid fa-users"
+>>>>>>> e8b1a0b1b47db093e122cc5d6cdc64a24cf392f0
             :benefits="['Built-in responsiveness', 'Mobile first fluid grid', 'Fits any screen sizes', 'PC Tablet and Mobile']"
+            
           />
+<<<<<<< HEAD
           <BenefitsCard 
             title="Fast Performance"
             icon="fa-rocket"
@@ -42,6 +51,16 @@
           <BenefitsCard 
             title="Secure"
             icon="fa-lock"
+=======
+          <BenefitsCard id="cardB"
+            title="Streamlined Information Sharing"
+            icon="fa-solid fa-comments"
+            :benefits="['Optimized for speed', 'Minimal load times', 'Efficient data handling', 'Lightning-fast interactions']"
+          />
+          <BenefitsCard id="cardC"
+            title="Inclusive and Collaborative Environment"
+            icon="fa-solid fa-handshake"
+>>>>>>> e8b1a0b1b47db093e122cc5d6cdc64a24cf392f0
             :benefits="['Top-notch security', 'Data encryption', 'Regular updates', '24/7 monitoring']"
           />
         </div>
@@ -216,5 +235,53 @@ display: flex;
 width: 70%;
 font-size:2rem;
 }
+#cardA:hover {
+
+    display: flex;
+    /* background-image: url('https://res.cloudinary.com/daprq6s7w/image/upload/v1723478297/Designer_13_nnety0.jpg');
+    background-repeat: no-repeat; */
+    color:rgba(0, 0, 255, 0);
+    object-fit: cover;
+    content: url('https://res.cloudinary.com/daprq6s7w/image/upload/v1723478297/Designer_13_nnety0.jpg');
+    padding: 2rem; /* no need for qoutes */
+}
+img:focus{
+ flex: 1;
+ object-fit: cover;
+} 
+
+#cardB:hover {
+
+display: flex;
+/* background-image: url('https://res.cloudinary.com/daprq6s7w/image/upload/v1723478297/Designer_13_nnety0.jpg');
+background-repeat: no-repeat; */
+color:rgba(0, 0, 255, 0);
+object-fit: cover;
+content: url('https://res.cloudinary.com/daprq6s7w/image/upload/v1723478297/Designer_13_nnety0.jpg');
+padding: 2rem; /* no need for qoutes */
+}
+
+img:focus{
+flex: 1;
+object-fit: cover;
+} 
+
+#cardC:hover {
+
+display: flex;
+/* background-image: url('https://res.cloudinary.com/daprq6s7w/image/upload/v1723478297/Designer_13_nnety0.jpg');
+background-repeat: no-repeat; */
+color:rgba(0, 0, 255, 0);
+object-fit: cover;
+content: url('https://res.cloudinary.com/daprq6s7w/image/upload/v1723478297/Designer_13_nnety0.jpg');
+padding: 2rem; /* no need for qoutes */
+
+}
+
+img:focus{
+flex: 1;
+object-fit: cover;
+}
+
 
 </style>
